@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import routes from "./routes.js";
+
+import routes from "./routes";
+
 import { Switch, Route, Redirect } from "react-router-dom";
 // creates a beautiful scrollbar
 import PerfectScrollbar from "perfect-scrollbar";
@@ -10,7 +12,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Footer from "./components/Footer.component";
 import FixedPlugin from "./components/FixedPlugin.js";
 import NavBar from "./components/NavBar.component";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar.js";
 
 import styles from "./assets/adminStyle.js";
 
@@ -103,6 +105,7 @@ export default function App({ ...rest }) {
         {...rest}
       />
       {/* <Sidebar routes={routes} /> */}
+
       <div className={classes.mainPanel} ref={mainPanel}>
         <NavBar
           routes={routes}
