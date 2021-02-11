@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import routes from "./routes.js";
+
+import routes from "./routes";
+
 import { Switch, Route, Redirect } from "react-router-dom";
 // creates a beautiful scrollbar
 import PerfectScrollbar from "perfect-scrollbar";
@@ -103,6 +105,7 @@ export default function App({ ...rest }) {
         {...rest}
       />
       {/* <Sidebar routes={routes} /> */}
+
       <div className={classes.mainPanel} ref={mainPanel}>
         <NavBar
           routes={routes}
