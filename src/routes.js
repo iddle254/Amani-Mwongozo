@@ -5,7 +5,7 @@ import OurImpact from "./views/OurImpact.pages";
 import OurProjects from "./views/OurProjects.pages";
 import OurTeam from "./views/OurTeam.pages";
 
-var routes = [
+const routes = [
   {
     path: "/our-fight",
     name: "Our Fight",

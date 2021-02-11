@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import routes from "./routes";
+import routes from "./routes.js";
 import { Switch, Route, Redirect } from "react-router-dom";
 // creates a beautiful scrollbar
 import PerfectScrollbar from "perfect-scrollbar";
@@ -92,17 +92,17 @@ export default function App({ ...rest }) {
   }, [mainPanel]);
   return (
     <div className={classes.wrapper}>
-      {/* <Sidebar
+      <Sidebar
         routes={routes}
-        logoText={"Creative Tim"}
+        logoText={"Amani Mwongozo"}
         logo={logo}
         image={image}
         handleDrawerToggle={handleDrawerToggle}
         open={mobileOpen}
         color={color}
         {...rest}
-      /> */}
-      <h1>This is the sidebar</h1>
+      />
+      {/* <Sidebar routes={routes} /> */}
       <div className={classes.mainPanel} ref={mainPanel}>
         <NavBar
           routes={routes}

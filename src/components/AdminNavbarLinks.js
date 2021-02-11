@@ -18,7 +18,9 @@ import Search from "@material-ui/icons/Search";
 // core components
 import CustomInput from "./CustomInput.js";
 import Button from "./Button.js";
-
+import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 import styles from "../assets/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -49,7 +51,7 @@ export default function AdminNavbarLinks() {
   };
   return (
     <div>
-      <div className={classes.searchWrapper}>
+      {/* <div className={classes.searchWrapper}>
         <CustomInput
           formControlProps={{
             className: classes.margin + " " + classes.search,
@@ -64,8 +66,8 @@ export default function AdminNavbarLinks() {
         <Button color="white" aria-label="edit" justIcon round>
           <Search />
         </Button>
-      </div>
-      <Button
+      </div> */}
+      {/* <Button
         color={window.innerWidth > 959 ? "transparent" : "white"}
         justIcon={window.innerWidth > 959}
         simple={!(window.innerWidth > 959)}
@@ -76,8 +78,8 @@ export default function AdminNavbarLinks() {
         <Hidden mdUp implementation="css">
           <p className={classes.linkText}>Dashboard</p>
         </Hidden>
-      </Button>
-      <div className={classes.manager}>
+      </Button> */}
+      {/* <div className={classes.manager}>
         <Button
           color={window.innerWidth > 959 ? "transparent" : "white"}
           justIcon={window.innerWidth > 959}
@@ -154,7 +156,7 @@ export default function AdminNavbarLinks() {
             </Grow>
           )}
         </Poppers>
-      </div>
+      </div> */}
       <div className={classes.manager}>
         <Button
           color={window.innerWidth > 959 ? "transparent" : "white"}
@@ -165,12 +167,31 @@ export default function AdminNavbarLinks() {
           onClick={handleClickProfile}
           className={classes.buttonLink}
         >
-          <Person className={classes.icons} />
-          <Hidden mdUp implementation="css">
-            <p className={classes.linkText}>Profile</p>
-          </Hidden>
+          <FacebookIcon className={classes.icons} />
         </Button>
-        <Poppers
+        <Button
+          color={window.innerWidth > 959 ? "transparent" : "white"}
+          justIcon={window.innerWidth > 959}
+          simple={!(window.innerWidth > 959)}
+          aria-owns={openProfile ? "profile-menu-list-grow" : null}
+          aria-haspopup="true"
+          onClick={handleClickProfile}
+          className={classes.buttonLink}
+        >
+          <InstagramIcon className={classes.icons} />
+        </Button>
+        <Button
+          color={window.innerWidth > 959 ? "transparent" : "white"}
+          justIcon={window.innerWidth > 959}
+          simple={!(window.innerWidth > 959)}
+          aria-owns={openProfile ? "profile-menu-list-grow" : null}
+          aria-haspopup="true"
+          onClick={handleClickProfile}
+          className={classes.buttonLink}
+        >
+          <YouTubeIcon className={classes.icons} />
+        </Button>
+        {/* <Poppers
           open={Boolean(openProfile)}
           anchorEl={openProfile}
           transition
@@ -217,7 +238,7 @@ export default function AdminNavbarLinks() {
               </Paper>
             </Grow>
           )}
-        </Poppers>
+        </Poppers> */}
       </div>
     </div>
   );
