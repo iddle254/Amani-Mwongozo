@@ -1,4 +1,5 @@
 import React from "react";
+import FightCard from "../components/FightCard.component";
 
 function OurFight() {
   return (
@@ -6,7 +7,7 @@ function OurFight() {
       {/* Education
             Agriculture
             Empowerment and resilience */}
-      Our fight is..
+      <FightCard />
     </div>
   );
 }
