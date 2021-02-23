@@ -2,8 +2,14 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import partner from "../../assets/UN.png";
 import TypographyComponent from "../typography.component";
+import { withStyles } from "@material-ui/core/styles";
 
-function Partners() {
+const styles = () => ({
+  conatinerItem: {
+    margin: "15px",
+  },
+});
+function Partners({ classes }) {
   return (
     <div>
       <TypographyComponent
@@ -16,23 +22,41 @@ function Partners() {
       </TypographyComponent>
 
       <Container>
-        <Row>
-          <Col>
+        <div
+          style={{
+            display: "flex",
+            flex: 1,
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+            alignContent: "spaceBetween",
+          }}
+        >
+          <div className={classes.conatinerItem}>
+            <Image src={partner} roundedCircle />
+          </div>
+
+          <div className={classes.conatinerItem}>
+            <Image src={partner} roundedCircle />
+          </div>
+
+          <div className={classes.conatinerItem}>
+            <Image src={partner} roundedCircle />
+          </div>
+        </div>
+
+        {/* <Col xs={6} md={4}>
             <Image src={partner} roundedCircle />
           </Col>
-          <Col>
+          <Col xs={6} md={4}>
             <Image src={partner} roundedCircle />
-          </Col>
-          <Col>
-            <Image src={partner} roundedCircle />
-          </Col>
-          {/* <Col xs={6} md={4}>
+          </Col> */}
+        {/* <Col xs={6} md={4}>
       <Image src={partner} thumbnail />
     </Col> */}
-        </Row>
       </Container>
     </div>
   );
 }
 
-export default Partners;
+export default withStyles(styles)(Partners);
