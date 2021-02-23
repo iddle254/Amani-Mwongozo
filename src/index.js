@@ -10,7 +10,7 @@ ReactDOM.render(
   <BrowserRouter>
     <React.StrictMode>
       <Switch>
-        <Route path="/admin/our-fight" render={(props) => <App />} />
+        <Route path="/admin" render={(props) => <App />} />
         <Redirect from="/" to="/admin/our-fight" />
       </Switch>
     </React.StrictMode>
