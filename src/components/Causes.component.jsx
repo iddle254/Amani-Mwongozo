@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Container from "@material-ui/core/Container";
-import TypographyComponent from "./typography.component";
+import TypographyComponent from "./engage/Typography.component";
 
 const styles = (theme) => ({
   root: {
@@ -88,11 +88,11 @@ function CausesComponent(props) {
 
   const images = [
     {
-      url:
-        "https://images.unsplash.com/photo-1507427254987-7be33d0321d3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDF8fGFmcmljYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      title: "Child welfare",
+      url: "https://ied.eu/wp-content/uploads/2018/11/refugees.jpg",
+      title: "Refugee affairs",
       width: "40%",
     },
+
     {
       url:
         "https://images.unsplash.com/photo-1507427100689-2bf8574e32d4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fGFmcmljYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -112,8 +112,9 @@ function CausesComponent(props) {
       width: "38%",
     },
     {
-      url: "https://ied.eu/wp-content/uploads/2018/11/refugees.jpg",
-      title: "Refugee affairs",
+      url:
+        "https://images.unsplash.com/photo-1507427254987-7be33d0321d3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDF8fGFmcmljYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      title: "Child welfare",
       width: "38%",
     },
     {
