@@ -19,6 +19,7 @@ import styles from "../../assets/team/teamStyle.js";
 import team1 from "../../assets/team/avatar.jpg";
 import team2 from "../../assets/team/christian.jpg";
 import team3 from "../../assets/team/kendall.jpg";
+import TypographyComponent from "../engage/Typography.component.jsx";
 
 const useStyles = makeStyles(styles);
 
@@ -31,26 +32,38 @@ export default function TeamSection() {
   );
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Here is our team</h2>
+      {/* <h2 className={classes.title}>Here is our team</h2> */}
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+              <GridItem className={classes.itemGrid}>
                 <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
-              <h4 className={classes.cardTitle}>
-                Gigi Hadid
-                <br />
-                <small className={classes.smallTitle}>Model</small>
-              </h4>
+              <TypographyComponent
+                variant="h4"
+                component="h4"
+                className={classes.cardTitle}
+              >
+                Deborah Motaroki
+              </TypographyComponent>
+              <TypographyComponent
+                variant="h5"
+                component="h5"
+                gutterBottom
+                className={classes.smallTitle}
+              >
+                CEO
+              </TypographyComponent>
+
               <CardBody>
-                <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
-                </p>
+                <TypographyComponent
+                  variant="h6"
+                  component="h6"
+                  className={classes.description}
+                >
+                  lorem ipsum
+                </TypographyComponent>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <Button
@@ -77,7 +90,7 @@ export default function TeamSection() {
               </CardFooter>
             </Card>
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          {/* <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img src={team2} alt="..." className={imageClasses} />
@@ -155,7 +168,7 @@ export default function TeamSection() {
                 </Button>
               </CardFooter>
             </Card>
-          </GridItem>
+          </GridItem> */}
         </GridContainer>
       </div>
     </div>
