@@ -1,4 +1,6 @@
 import React from "react";
+import TeamSection from "../components/our-team/TeamSection";
+import WorkSection from "../components/our-team/WorkSection";
 
 function OurTeam() {
   return (
@@ -6,7 +8,8 @@ function OurTeam() {
       {/* Our Team
             CEO and founders
             Exec assistant */}
-      This is the team page
+      <TeamSection />
+      <WorkSection />
     </div>
   );
 }
