@@ -17,7 +17,7 @@ import Sidebar from "./components/Sidebar.js";
 import styles from "./assets/adminStyle.js";
 
 import bgImage from "./assets/sidebar-2.jpg";
-import logo from "./assets/reactlogo.png";
+import logo from "./assets/Amani.png";
 
 let ps;
 
