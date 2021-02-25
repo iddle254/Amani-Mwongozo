@@ -64,16 +64,16 @@ const sidebarStyle = (theme) => ({
     position: "relative",
     padding: "15px 15px",
     zIndex: "4",
-    "&:after": {
-      content: '""',
-      position: "absolute",
-      bottom: "0",
+    // "&:after": {
+    //   content: '""',
+    //   position: "absolute",
+    //   bottom: "0",
 
-      height: "1px",
-      right: "15px",
-      width: "calc(100% - 30px)",
-      backgroundColor: "rgba(" + hexToRgb(grayColor[6]) + ", 0.3)",
-    },
+    //   height: "1px",
+    //   right: "15px",
+    //   width: "calc(100% - 30px)",
+    //   backgroundColor: "rgba(" + hexToRgb(grayColor[6]) + ", 0.3)",
+    // },
   },
   logoLink: {
     ...defaultFont,
@@ -101,11 +101,11 @@ const sidebarStyle = (theme) => ({
     marginRight: "15px",
   },
   img: {
-    width: "35px",
+    width: "80%",
     top: "22px",
     position: "absolute",
     verticalAlign: "middle",
-    border: "0",
+    // border: "0",
   },
   background: {
     position: "absolute",
@@ -288,6 +288,7 @@ const sidebarStyle = (theme) => ({
     width: "260px",
     zIndex: "4",
     overflowScrolling: "touch",
+    marginTop: "130px",
   },
   activePro: {
     [theme.breakpoints.up("md")]: {
